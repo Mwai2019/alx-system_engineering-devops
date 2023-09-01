@@ -1,4 +1,2 @@
 #!/bin/bash
-SOURCE_DIRECTORY='/home/Foo/folder_source'
-DESTINATION_DIRECTORY='/home/Foo/other_folder/folder_destination'
-cp -v $SOURCE_DIRECTORY/*.html $DESTINATION_DIRECTORY
+find /home/Foo/folder_source -name "*.html" -exec cp {} /home/Foo/other_folder/folder_destination  \;
