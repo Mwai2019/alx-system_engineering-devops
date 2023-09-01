@@ -1,2 +1,4 @@
 #!/bin/bash
-cp -u *.htm ..
+SOURCE_DIRECTORY='/home/Foo/folder_source'
+DESTINATION_DIRECTORY='/home/Foo/other_folder/folder_destination'
+cp -v $SOURCE_DIRECTORY/*.html $DESTINATION_DIRECTORY
